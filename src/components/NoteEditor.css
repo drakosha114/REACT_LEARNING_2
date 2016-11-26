@@ -1,0 +1,77 @@
+.note-editor {
+    width: 100%;
+    max-width: 600px;
+    padding: 16px;
+    margin: 16px auto;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.title,
+.textarea {
+    width: 100%;
+    resize: none;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    font-weight: 300;
+}
+.title:focus,
+.textarea:focus {
+    outline: 0;
+}
+.buttons {
+    text-align: right;
+}
+.buttons > button + button {
+    margin-left: 20px;
+}
+.clear-button {
+    width: 100px;
+    background-color:#cecece;
+    border-radius:28px;
+    border:1px solid #aaaaaa;
+    cursor:pointer;
+    color:#2f6627;
+    font-size:14px;
+    padding:8px 8px;
+    text-transform: uppercase;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    display: inline-block;
+
+}
+.add-button {
+    display: inline-block;
+    width: 100px;
+    background-color:#44c767;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:14px;
+    padding:8px 8px;
+    text-transform: uppercase;
+    text-decoration:none;
+    text-shadow:0 1px 0 #2f6627;
+}
+.add-button:disabled {
+    opacity: 0.6;
+    background-color: #cdcdcd;
+    cursor: inherit;
+    border:1px solid #aaaaaa;
+}
+.add-button:hover:not(:disabled) {
+    background-color:#5cbf2a;
+}
+.clear-button:active,
+.add-button:active {
+    position:relative;
+    top:1px;
+}
+.clear-button:focus,
+.add-button:focus {
+    outline: 0;
+}
